@@ -128,11 +128,15 @@ h1{
     html{
         font-size: 1.1rem;
     }
+    input{
+        width: 70%;
+    }
     .detail{
         padding: .5em 2em;
     }
     .cel{
         padding-right: 2em;
         padding-left: 2em;
+    }
     
 }
