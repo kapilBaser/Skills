@@ -99,6 +99,7 @@ h1{
     font-family: p2;
 }
 .cel{
+    box-sizing: border-box;
     width: 100%;
     text-align: center;
     position: absolute;
@@ -106,9 +107,11 @@ h1{
     transform: translateY(-50%);
 }
 .social{
+    box-sizing:border-box;
     margin: 0 2em 0 0;
 }
 .so-logo{
+    box-sizing: border-box;
     position: absolute;
     width: 100%;
     display: flex;
@@ -118,15 +121,18 @@ h1{
 }
 @media (max-width: 1100px) and (min-width:700px){
     html{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 @media (max-width: 700px){
     html{
-        font-size: .9rem;
+        font-size: 1.1rem;
     }
     .detail{
-        padding: .5em 3em;
+        padding: .5em 2em;
     }
+    .cel{
+        padding-right: 2em;
+        padding-left: 2em;
     
 }
