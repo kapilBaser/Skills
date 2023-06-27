@@ -1,0 +1,132 @@
+
+@font-face {
+    font-family: p2;
+    src: url(./Poppins-Regular.ttf);
+  }
+html{
+    font-size: 1.3rem;
+}
+body{
+    width: 100vw;
+    margin: 0%;
+    background-color: whitesmoke;
+}
+.outer{
+    background-color: white;
+    width: 100%;
+    padding: 1em 2em;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.outer .logo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    
+}
+.menu{
+    
+    box-sizing: border-box;
+}
+.logo{
+    
+    position: relative;
+    
+    min-width: 140px;
+    position: relative;
+    width: 12%;
+}
+ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+}
+ul li{
+    margin-right: 3em;
+    
+}
+ul .last{
+    margin: 0;
+}
+.detail{
+    padding: 1em 8em;
+}
+h2,p{
+    font-family: p2;
+    
+}
+form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+input{
+    padding: .5em 1em;
+    font-family: p2;
+    font-size: 1rem;
+    outline: 0;
+    border: 0;
+    margin: 0%;
+    
+    width: 30%;
+}
+button{
+    padding: .5em 1em;
+    font-family: p2;
+    font-size: 1rem;
+    width: 10%;
+    box-sizing: border-box;
+    outline: 0;
+    cursor: pointer;
+    border: 0;
+    margin:0;
+    text-align: center;
+    color: white;
+    background-color: rgb(11, 125, 255);
+}
+button:hover{
+    background-color: rgb(49, 144, 252);
+}
+.info{
+    margin: 2em 0 5em 0;
+}
+h1{
+    font-family: p2;
+}
+.cel{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.social{
+    margin: 0 2em 0 0;
+}
+.so-logo{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 9em 0;
+    bottom: 5%;
+}
+@media (max-width: 1100px) and (min-width:700px){
+    html{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 700px){
+    html{
+        font-size: .9rem;
+    }
+    .detail{
+        padding: .5em 3em;
+    }
+    
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Kapil Baser">
+        <meta name="description" content="This page contain loading animation">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loading</title>
+        <link rel="stylesheet" href="./main.css" type="text/css">
+    </head>
+    <body>
+       
+       <div class="outer">
+        
+            <img class="logo" src="./logo.png">
+        
+       </div>     
+       <div class="about">
+            <div class="detail">
+            <h2>Welcome</h2>
+            <p>
+                Hello,<br><br>
+                We are Kapil & Hardik and Currently pursuing MCA degree. And at the time of summer internship holidays we searched for many free courses and workshops to growing our skills.<br><br>
+                You know what we successfully found some free workshops. But In all free workshops they sponsore their courses and always talk about discounts. And we say "Bhai agar course lena hi hota to ham idhr kyu aate😄"<br><br>
+                And comes up with solution to help you, we now give free workshops without any course sponsers and only provide value-added learning.<br><br>
+                <strong>Have also you faced this problem?</strong> If yes then connect with us. We not say anything, you can get your answer after once you join our free workshop. 
+
+            </p>
+        </div>
+            <div class="info">
+                <form >
+                <input placeholder="xyz@mail.com" name="Email" type="email">
+                <button value="submit">&gt;&gt;</button>
+                </form>
+            </div>
+       </div>
+       
+    </body>
+    <script>
+        let form = document.querySelector("form");
+        var regex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        form.addEventListener("submit",(e)=>{
+            
+            
+            let input = document.getElementsByTagName("input");
+            input = input[0];
+            console.log(regex.test(input.value));
+            if(regex.test(input.value)){
+                e.preventDefault();
+                let data = new FormData(form);
+                fetch('https://script.google.com/macros/s/AKfycbyoGw01-yjyiVmowUcozpNpsIB2ad_13TcxS-OwWlgaLEt8UH4k9i9HHZEUlFYp4qhCtA/exec',{
+                method:'POST',
+                body:data
+                }).then(res=>res.text()).then(data=>console.log(data));
+                window.open('thankyou.html','_self');
+                
+            }else{
+                alert("Please Provide Correct Mail");
+            }
+            
+        })    
+    </script>
+</html>
